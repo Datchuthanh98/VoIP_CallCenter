@@ -1,0 +1,12 @@
+<include>
+    <user id="mykamailio" cidr="192.168.186.153/24">
+        <params>
+            <!--<param name="password" value="$${default_password}"/>-->
+        </params>
+        <variables>
+            <variable name="toll_allow" value="domestic,international,local"/>
+            <variable name="accountcode" value="mykamailio"/>
+            <variable name="user_context" value="MyKamailio-Inbound"/>
+        </variables>
+    </user>
+</include>

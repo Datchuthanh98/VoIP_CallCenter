@@ -1,0 +1,30 @@
+<include>
+<profile name="kamailio">
+<aliases>
+<alias name="kamailio" />
+</aliases>
+<settings>
+  <param name="sip-ip" value="192.168.186.137"/>
+  <param name="rtp-ip" value="192.168.186.137"/>
+  <param name="ext-rtp-ip" value="auto-nat"/>
+  <param name="ext-sip-ip" value="auto-nat"/>
+  <param name="context" value="MyKamailio-Inbound"/>
+  <param name="sip-port" value="8081"/>
+  <param name="accept-blind-auth" value="false"/>
+  <param name="rtp-timer-name" value="soft"/>
+  <param name="inbound-codec-prefs" value="PCMU,PCMA,G722,G729"/>
+  <param name="outbound-codec-prefs" value="PCMU,PCMA,G722,G729"/>
+</settings>
+<gateways>
+  <gateway name="kamailio_gateway">
+    <param name="username" value="1000"/>
+    <param name="realm" value="192.168.186.153"/>
+    <param name="from-user" value="1000"/>
+    <param name="from-domain" value="192.168.186.153"/>
+    <param name="expire-seconds" value="3600"/>
+    <param name="register" value="true"/>
+    <param name="password" value="1234"/>
+  </gateway>
+</gateways>
+</profile>
+</include>

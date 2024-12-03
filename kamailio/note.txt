@@ -1,0 +1,4 @@
+rtpproxy -F -l 192.168.186.153 -s udp:192.168.186.153:10000
+rtpproxy -F -l 192.168.186.153 -s udp:localhost:10000
+kamailio -E -c /etc/kamailio/kamailio.cfg
+journalctl -u kamailio -f

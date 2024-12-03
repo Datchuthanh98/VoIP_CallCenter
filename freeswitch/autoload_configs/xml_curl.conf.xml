@@ -1,0 +1,12 @@
+<configuration name="xml_curl.conf" description="cURL XML Gateway">
+  <bindings>
+    <!-- <binding name="dialplan">
+      <param name="gateway-url" value="http://192.168.186.1:3000/api/getDiaplan" bindings="dialplan"/> 
+    </binding>
+
+    <binding name="directory"> 
+      <param name="gateway-url" value="http://192.168.186.1:3000/api/getExtension" bindings="directory"/> 
+      <param name="gateway-credentials" value="datct:1234"/>
+    </binding>  -->
+  </bindings>
+</configuration>

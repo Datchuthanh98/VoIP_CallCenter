@@ -1,0 +1,20 @@
+- Configuration Files:
+'/usr/local/homer/etc/webapp_config.json'
+'/etc/heplify-server.toml'
+- Start/stop HOMER Application Server:
+'systemctl start|stop homer-app'
+- Start/stop HOMER SIP Capture Server:
+'systemctl start|stop heplify-server'
+- Start/stop HOMER SIP Capture Agent:
+'systemctl start|stop heplify'
+- Access HOMER UI:
+[http://192.168.186.136:9080](http://192.168.186.136:9080/)
+[default: admin/sipcapture]
+- Send HEP/EEP Encapsulated Packets to:
+hep://192.168.186.136:9060
+- Prometheus Metrics URL:
+http://192.168.186.136:9096/metrics
+
+Command usually use : 
+
+heplify -e -hs 192.168.186.136:9060 -m SIP -dd -zf -l info
