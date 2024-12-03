@@ -1,0 +1,23 @@
+{
+    "name": "status",
+    "version": "0.0.1",
+    "description": "Simple status of FSW app",
+    "author": "Chad Engler <Chad.Engler@patlive.com>",
+    "homepage": "https://github.com/englercj/node-esl",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/englercj/node-esl.git"
+    },
+    "type": "module",
+    "dependencies": {
+        "express": "^4.21.1",
+        "modesl": "*",
+        "switch-esl": "^1.2.0",
+        "uuid": "^11.0.3",
+        "xmlbuilder2": "^3.1.1"
+    },
+    "engines": {
+        "node": ">=0.8.x"
+    },
+    "private": true
+}

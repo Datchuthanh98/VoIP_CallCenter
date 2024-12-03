@@ -1,0 +1,21 @@
+<context name="MyKamailio-Inbound">
+    <extension name="Send_to_Kamailio">
+        <condition field="destination_number" expression="^(10[01][0-9])$">
+            <!-- Lưu số đích được gọi -->
+            <action application="export" data="dialed_extension=$1"/>
+
+            <!-- Đặt các thuộc tính cuộc gọi -->
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+
+            <!-- Chuyển cuộc gọi đến Kamailio thông qua gateway -->
+            <action application="bridge" data="sofia/gateway/kamailio_gateway/$1"/>
+        </condition>
+    </extension>
+
+</context>
+
+
+    
+
+    

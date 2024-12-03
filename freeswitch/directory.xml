@@ -1,0 +1,835 @@
+<section name="directory" description="User Directory">
+    <domain name="192.168.186.137">
+        <params>
+            <param name="dial-string" value="{^^:sip_invite_domain=${dialed_domain}:presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(*/${dialed_user}@${dialed_domain})},${verto_contact(${dialed_user}@${dialed_domain})}"></param>
+            <param name="jsonrpc-allowed-methods" value="verto"></param>
+    </params>
+        <variables>
+            <variable name="record_stereo" value="true"></variable>
+
+            <variable name="default_gateway" value="example.com"></variable>
+
+            <variable name="default_areacode" value="918"></variable>
+
+            <variable name="transfer_fallback_extension" value="operator"></variable>
+
+    </variables>
+        <groups>
+            <group name="default">
+	        <users>
+            <user id="1000">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1000"></param>
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1000"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1000"></variable>
+
+                    <variable name="effective_caller_id_number" value="1000"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1001">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1001"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1001"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1001"></variable>
+
+                    <variable name="effective_caller_id_number" value="1001"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1002">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1002"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1002"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1002"></variable>
+
+                    <variable name="effective_caller_id_number" value="1002"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1003">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1003"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1003"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1003"></variable>
+
+                    <variable name="effective_caller_id_number" value="1003"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1004">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1004"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1004"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1004"></variable>
+
+                    <variable name="effective_caller_id_number" value="1004"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1005">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1005"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1005"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1005"></variable>
+
+                    <variable name="effective_caller_id_number" value="1005"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1006">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1006"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1006"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1006"></variable>
+
+                    <variable name="effective_caller_id_number" value="1006"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1007">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1007"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1007"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1007"></variable>
+
+                    <variable name="effective_caller_id_number" value="1007"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1008">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1008"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1008"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1008"></variable>
+
+                    <variable name="effective_caller_id_number" value="1008"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1009">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1009"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1009"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1009"></variable>
+
+                    <variable name="effective_caller_id_number" value="1009"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1010">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1010"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1010"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1010"></variable>
+
+                    <variable name="effective_caller_id_number" value="1010"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1011">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1011"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1011"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1011"></variable>
+
+                    <variable name="effective_caller_id_number" value="1011"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1012">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1012"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1012"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1012"></variable>
+
+                    <variable name="effective_caller_id_number" value="1012"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1013">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1013"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1013"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1013"></variable>
+
+                    <variable name="effective_caller_id_number" value="1013"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1014">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1014"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1014"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1014"></variable>
+
+                    <variable name="effective_caller_id_number" value="1014"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1015">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1015"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1015"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1015"></variable>
+
+                    <variable name="effective_caller_id_number" value="1015"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1016">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1016"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1016"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1016"></variable>
+
+                    <variable name="effective_caller_id_number" value="1016"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1017">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1017"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1017"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1017"></variable>
+
+                    <variable name="effective_caller_id_number" value="1017"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1018">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1018"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1018"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1018"></variable>
+
+                    <variable name="effective_caller_id_number" value="1018"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+            <user id="1019">
+                <params>
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="1019"></param>
+
+    </params>
+
+                <variables>
+                    <variable name="toll_allow" value="domestic,international,local"></variable>
+
+                    <variable name="accountcode" value="1019"></variable>
+
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Extension 1019"></variable>
+
+                    <variable name="effective_caller_id_number" value="1019"></variable>
+
+                    <variable name="outbound_caller_id_name" value="FreeSWITCH"></variable>
+
+                    <variable name="outbound_caller_id_number" value="0000000000"></variable>
+
+                    <variable name="callgroup" value="techsupport"></variable>
+
+    </variables>
+
+  </user>
+
+  
+            <user id="brian" cidr="192.0.2.0/24">
+    
+                <gateways>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </gateways>
+
+                <params>
+      
+                    <param name="password" value="1234"></param>
+
+                    <param name="vm-password" value="9999"></param>
+
+      
+      
+      
+      
+      
+      
+      
+       
+      
+    </params>
+
+                <variables>
+      
+                    <variable name="user_context" value="default"></variable>
+
+                    <variable name="effective_caller_id_name" value="Brian West"></variable>
+
+                    <variable name="effective_caller_id_number" value="1000"></variable>
+
+      
+                    <variable name="process_cdr" value="true"></variable>
+
+      
+                    <variable name="rtp_secure_media" value="true"></variable>
+
+      
+      
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </variables>
+
+
+                <vcard>
+      
+    </vcard>
+
+  </user>
+
+            <user id="default"> 
+    
+                <variables>
+      
+      
+                    <variable name="numbering_plan" value="US"></variable>
+
+                    <variable name="default_areacode" value="918"></variable>
+
+                    <variable name="default_gateway" value="example.com"></variable>
+
+    </variables>
+
+  </user>
+
+
+            <user id="example.com">
+                <gateways>
+                    <gateway name="example.com">
+	                <param name="username" value="joeuser"></param>
+
+	                <param name="password" value="password"></param>
+
+	                <param name="from-user" value="joeuser"></param>
+
+	                <param name="from-domain" value="example.com"></param>
+
+	                <param name="expire-seconds" value="600"></param>
+
+	                <param name="register" value="false"></param>
+
+	                <param name="retry-seconds" value="30"></param>
+
+	                <param name="extension" value="5000"></param>
+
+	
+	                <param name="context" value="public"></param>
+
+      </gateway>
+
+    </gateways>
+
+                <params>
+                    <param name="password" value="password"></param>
+
+    </params>
+
+  </user>
+
+
+           <user id="SEP001120AABBCC">
+               <params>
+    
+                  <param name="foo" value="bar"></param>
+
+   </params>
+
+               <skinny>
+                  <buttons>
+      
+      
+                      <button position="1" type="Line" label="Line 1" value="1101" caller-name="Calling as 1101"></button>
+
+                      <button position="3" type="Line" label="Shared Line 10" value="1110" caller-name="Calling as 1110"></button>
+
+      
+                      <button position="5" type="SpeedDial" label="Call 1001" value="1001"></button>
+
+      
+                      <button position="6" type="ServiceUrl" label="Some URL" value="http://phone-xml.berbee.com/menu.xml"></button>
+
+    </buttons>
+
+   </skinny>
+
+  </user>
+
+
+	</users>
+
+      </group>
+
+
+            <group name="sales">
+	        <users>
+	  
+	            <user id="1000" type="pointer"></user>
+
+	            <user id="1001" type="pointer"></user>
+
+	            <user id="1002" type="pointer"></user>
+
+	            <user id="1003" type="pointer"></user>
+
+	            <user id="1004" type="pointer"></user>
+
+	</users>
+
+      </group>
+
+
+            <group name="billing">
+	        <users>
+	            <user id="1005" type="pointer"></user>
+
+	            <user id="1006" type="pointer"></user>
+
+	            <user id="1007" type="pointer"></user>
+
+	            <user id="1008" type="pointer"></user>
+
+	            <user id="1009" type="pointer"></user>
+
+	</users>
+
+      </group>
+
+
+            <group name="support">
+	        <users>
+	            <user id="1010" type="pointer"></user>
+
+	            <user id="1011" type="pointer"></user>
+
+	            <user id="1012" type="pointer"></user>
+
+	            <user id="1013" type="pointer"></user>
+
+	            <user id="1014" type="pointer"></user>
+
+	</users>
+
+      </group>
+
+    </groups>
+
+
+  </domain>
+
+  </section>
+
