@@ -1,5 +1,5 @@
 <include>
-    <user id="mykamailio" cidr="192.168.186.153/24">
+    <user id="mykamailio" cidr="$${ip_kamailio_cidr}">
         <params>
             <!--<param name="password" value="$${default_password}"/>-->
         </params>

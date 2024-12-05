@@ -16,7 +16,7 @@
 
     <list name="loopback.auto" default="allow">
       <node type="allow" cidr="192.168.186.1/24"/>
-      <node type="allow" cidr="192.168.186.153/24"/>
+      <node type="allow" cidr="$${ip_kamailio_cidr}"/>
     </list>
 
     <!--
@@ -28,7 +28,7 @@
     <list name="domains" default="deny">
       <!-- domain= is special it scans the domain from the directory to build the ACL -->
       <node type="allow" cidr="192.168.186.1/24"/>
-      <node type="allow" cidr="192.168.186.153/24"/>
+      <node type="allow" cidr="$${ip_kamailio_cidr}"/>
       <!-- <node type="allow" domain="$${domain}"/> -->
       <!-- use cidr= if you wish to allow ip ranges to this domains acl. -->
       <!-- <node type="allow" cidr="192.168.0.0/24"/> -->
