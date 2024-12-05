@@ -4,8 +4,8 @@
 <alias name="kamailio" />
 </aliases>
 <settings>
-  <param name="sip-ip" value="192.168.186.137"/>
-  <param name="rtp-ip" value="192.168.186.137"/>
+  <param name="sip-ip" value="$${local_ip_v4}"/>
+  <param name="rtp-ip" value="$${local_ip_v4}"/>
   <param name="ext-rtp-ip" value="auto-nat"/>
   <param name="ext-sip-ip" value="auto-nat"/>
   <param name="context" value="MyKamailio-Inbound"/>
