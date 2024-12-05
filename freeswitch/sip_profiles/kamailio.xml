@@ -18,9 +18,9 @@
 <gateways>
   <gateway name="kamailio_gateway">
     <param name="username" value="1000"/>
-    <param name="realm" value="192.168.186.153"/>
+    <param name="realm" value="$${ip_kamailio}"/>
     <param name="from-user" value="1000"/>
-    <param name="from-domain" value="192.168.186.153"/>
+    <param name="from-domain" value="$${ip_kamailio}"/>
     <param name="expire-seconds" value="3600"/>
     <param name="register" value="true"/>
     <param name="password" value="1234"/>
