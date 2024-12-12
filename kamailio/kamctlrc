@@ -5,7 +5,7 @@
 ## will use their internal default values.
  
 ## the SIP domain
-SIP_DOMAIN=192.168.186.153
+SIP_DOMAIN=1.1.1.1
  
 ## chrooted directory
 # CHROOT_DIR="/path/to/chrooted/directory"
