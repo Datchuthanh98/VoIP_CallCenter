@@ -5,5 +5,3 @@ rtpproxy -F -l 192.168.186.153 -s udp:192.168.186.153:7733
 rtpproxy -F -l 192.168.186.153 -s udp:localhost:7733
 kamailio -E -c /etc/kamailio/kamailio.cfg 
 journalctl -u kamailio -f
-
-YTEwYTNiOGJhMzgwNWQ4MWU2ZDRmY2IyODIxOTg4Mjg.
