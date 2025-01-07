@@ -22,7 +22,6 @@ const reconnectOptions = {
 
 const password = 'ClueCon';
 
-
 //BROADCAST EVENT
 const eslClientOutbound = new ESL({ connection, password, reconnectOptions });
 eslClientOutbound.connect()
@@ -33,28 +32,81 @@ eslClientOutbound.connect()
         console.error('Failed to connect to FreeSWITCH:', error);
     });
 
-eslClientOutbound.addEventListener('ALL', (event) => {
-    console.log("Event: ",event )
-});
-
-// eslClientOutbound.addEventListener('CHANNEL_ANSWER', (event) => {
-//     console.log(`Channel answered ${event["Unique-ID"]}`);
-// })
-
-// eslClientOutbound.addEventListener('CHANNEL_DESTROY', (event) => {
-//     console.log(`Channel destroyed ${event["Unique-ID"]}`);
-
-// })
-
-// eslClientOutbound.addEventListener('BACKGROUND_JOB', (event) => {
-//     console.log(`Kết quả từ job ${event['Job-UUID']}: \n`, event['_body']);
-// });
-
-
 //SEND COMMAND
 const eslClientInbound = new esl.Connection(connection.host, connection.port, password, function () {
     console.log('EslClientInbound Connected to FreeSWITCH ');
 });
+
+
+// eslClientOutbound.addEventListener('ALL', (event) => {
+//     console.log("Event: ",event )
+// });
+
+//Tier 0
+// eslClientOutbound.addEventListener('BACKGROUND_JOB', (event) => {
+//     // console.log(`Kết quả từ job ${event['Job-UUID']}: \n`, event['_body']);
+//     console.log(event)
+// });
+
+
+//Tier 1
+
+// eslClientOutbound.addEventListener('CHANNEL_CREATE', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('CHANNEL_DESTROY', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('RECORD_START', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('RECORD_STOP', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('PLAYBACK_START', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('PLAYBACK_STOP', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('CHANNEL_HANGUP', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('CHANNEL_HANGUP_COMPLETE', (event) => {
+//     console.log(event);
+// })
+
+
+//Tier 2
+eslClientOutbound.addEventListener('CHANNEL_EXECUTE', (event) => {
+    console.log(event);
+})
+
+eslClientOutbound.addEventListener('CHANNEL_PROGRESS', (event) => {
+    console.log(event);
+})
+
+eslClientOutbound.addEventListener('CHANNEL_PROGRESS_MEDIA', (event) => {
+    console.log(event);
+})
+
+//Tier 3
+// eslClientOutbound.addEventListener('RELOADXML', (event) => {
+//     console.log(event);
+// })
+
+// eslClientOutbound.addEventListener('SHUTDOWN', (event) => {
+//     console.log(event);
+// })
+
+
 
 // BGAPI thường dùng cho các tác vụ mất nhiều thời gian hoặc yêu cầu thực hiện song song. 
 //Ví dụ: gọi điện, gửi SMS, hoặc thực hiện một thao tác lớn mà không cần chờ phản hồi ngay lập tức.
